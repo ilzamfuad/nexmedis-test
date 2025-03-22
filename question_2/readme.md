@@ -5,10 +5,12 @@ Consider a database table Users with the following columns:
 - username
 - email
 - created_at
+
 Your task is to design an indexing strategy to optimize the following queries:
 1. Fetch a user by username.
 2. Fetch users who signed up after a certain date (created_at > "2023-01-01").
 3. Fetch a user by email.
+
 Explain which columns you would index, and whether composite indexes or individual indexes would be appropriate for each query. Discuss trade-offs in terms of read and write performance.
 
 # Answer

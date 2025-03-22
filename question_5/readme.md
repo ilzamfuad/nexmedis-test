@@ -14,6 +14,7 @@ You are tasked with refactoring a monolithic service that handles multiple respo
     - Database Problem: We can optimize the query such as tuning the query, add index, add materialize view for faster query.
     - Application Problem: Many problem can accure from application problem, such as bottleneck, complex logic, CPU bound, logic is too long. We can optimize the problem with caching for faster response, fix the logic, we can consider async process to make it faster.
     - Third Party Problem: Sometime slow problem is not from our side, it is from third party side. We can optimize this with cache the result of third party response, follow up the third party client, and we can consider using circuit breaker so that the application will fail fast.
+  - CQRS: If the problem is fixed but the performance is still quite slow, we can consider to using CQRS design to separate the read and write operation.
 
 - If we want to migrate to Microservices, we can do the following step for migrating:
   - Identify Service Boundaries and Dependencies: Analyze and list the functionalities such as authentication, file uploads, etc, and dependencies such as databases, 3rd party services, etc. There functionalities and dependencies will form basis for new microservices architecture.

@@ -5,6 +5,7 @@ You are tasked with designing an API for an e-commerce platform. The system must
 - Viewing and searching products
 - Adding items to a shopping cart
 - Completing a purchase
+
 Design the RESTful endpoints for the above features. Describe your choice of HTTP methods (GET, POST, PUT, DELETE), URL structure, and the expected response formats. Assume that users need to authenticate before performing certain actions (e.g., adding items to the cart).
 
 # Answer
